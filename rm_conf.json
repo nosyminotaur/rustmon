@@ -1,0 +1,5 @@
+{
+    "process": "git log --oneline",
+    "process_dir": "C:\\Data\\Rust\\kakuro",
+    "watch_directory": "C:\\Data\\SendData"
+}
