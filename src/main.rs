@@ -12,7 +12,7 @@ fn main() -> Result<(), Error> {
     let is_successful = windows::watch_directory(&dir);
 
 	if is_successful.is_err() {
-		println!("Failed! Error: {:?}", is_successful.unwrap_err());
+		println!("Failed! Error: {}", is_successful.unwrap_err());
 	}
 
 	Ok(())

@@ -29,7 +29,7 @@ pub fn watch_directory(dir: &str) -> Result<bool, io::Error> {
         	return Err(io::Error::last_os_error());
 		}
 		loop {
-            println!("Waiting for changes in {:?}", dir);
+            println!("Waiting for changes in {}", dir);
 			let dwWaitStatus = WaitForSingleObject(change_handle, INFINITE);
 			match dwWaitStatus {
 				WAIT_OBJECT_0 => {
